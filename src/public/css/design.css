@@ -1,0 +1,103 @@
+html,body {
+    
+    margin: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+section.auth {
+    
+    display: grid;
+
+    grid-template-rows: 90% 10%;
+
+    width: 100%;
+
+    height: 100%;
+
+    text-align: center;
+
+}
+
+section.auth section {
+    
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+
+section.auth section div div.logo {
+
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    
+
+    background-position: center;
+
+    height: 96px;
+
+    margin-bottom: 30px;
+
+}
+
+section.auth section div input,button {
+
+    width: calc(300px - 30px);
+
+    height: 45px;
+
+    margin: 15px;
+
+    border: 0;
+
+    border-radius: 5px;
+    
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+
+    outline: none;
+
+    padding-left: 15px;
+
+    padding-right: 15px;
+
+    font-size: 18px;
+
+}
+
+section.auth section div button {
+
+    width: 150px;
+
+    background: rgb(0, 126, 255);
+
+    color: #fff;
+
+    float: left;
+
+}
+
+section.auth footer {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font: message-box;
+
+    font-size: 16px;
+
+}

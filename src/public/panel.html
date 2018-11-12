@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    
+<head>
+    
+<meta charset="UTF-8">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title> Admin Panel </title>
+    
+<script src="./js/panel.js"></script>
+    
+<link rel="stylesheet" type="text/css" href="./css/panel.css">
+    
+</head>
+
+	<body>
+        
+        <header class="menu">
+        
+            <nav>
+            
+                <div>
+                    
+                    <label>turistuz</label>
+                
+                </div>
+                        
+                <div></div>
+                    
+                <div>
+                        
+                    <button>выход</button>
+                    
+                </div>
+            
+            </nav>
+        
+        </header>
+        
+        <section class="interface">
+        
+            <header>posts</header>
+            
+            <section>
+                
+<!--
+                <figure class="item">
+                
+                    <div class="background" style="background-image: url(img/item5.png)"></div>
+                    
+                    <div class="text">
+                    
+                        <h3>
+                            
+                            <label class="title">hello worl</label>
+                            
+                            <label class="tools">
+                                
+                                <div class="a"></div>
+                                
+                                <div class="b"></div>
+                            
+                            </label>
+                        
+                        </h3>
+                        
+                        <br>
+                        
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris aliquet malesuada feugiat. Curabitur fermentum bibendum nulla, non dictum ipsum tincidunt non. Quisque convallis pharetra tempor. Donec id pretium leo. Pellentesque luctus massa non elit viverra pellentesque. Cras vitae neque molestie, rhoncus ipsum sit amet, lobortis dui. Fusce in urna sem.
+                        </p>
+                    
+                    </div>
+                
+                </figure>
+-->
+                
+                <figure class="item add">
+                    
+                    <input style="display: none;" type="file" id="img">
+                
+                    <label for="img"><div class="background" style="background-image: url(img/drop.png);background-size: 50%;"></div></label>
+                    
+                    <div class="text">
+                    
+                        <h3>
+                            
+                            <label class="title">
+                                
+                                <input id="title" placeholder="Заголовок">
+                            
+                            </label>
+                            
+                            <label class="tools">
+                                
+                                <div onclick="addPost()" class="c"></div>
+                            
+                            </label>
+                        
+                        </h3>
+                        
+                        <br>
+                        
+                        <p>
+                            
+                            <textarea id="text" placeholder="Содержание"></textarea>
+                            
+                        </p>
+                    
+                    </div>
+                
+                </figure>
+            
+            </section>
+        
+        </section>
+        
+
+    </body>
+    
+</html>

@@ -1,0 +1,7 @@
+@media (max-width: 800px)
+{
+section.posts {
+display: flex;
+  flex-flow: row wrap;
+}
+}

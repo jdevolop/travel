@@ -1,0 +1,36 @@
+{
+  "name": "tourist",
+  "version": "1.0.0",
+  "description": "this is for tourist",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon --exec \"npm run start\""
+  },
+  "author": "Jamshid",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^8.3.0",
+    "knex": "^0.15.2",
+    "koa": "^2.5.3",
+    "koa-body": "^4.0.4",
+    "koa-bodyparser": "^4.2.1",
+    "koa-helmet": "^4.0.0",
+    "koa-jwt": "^3.5.1",
+    "koa-logger": "^3.2.0",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "*",
+    "koa2-cors": "^2.0.6",
+    "multer": "^1.4.1",
+    "pg": "^7.4.3"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=11.0.0"
+  }
+}

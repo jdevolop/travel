@@ -1,0 +1,481 @@
+header{
+
+    font: message-box;
+
+    font-size: 18px;
+
+    text-transform: capitalize;
+
+    position: fixed;
+
+    transition: all 0.8s;
+
+    z-index: 20;
+
+}
+
+
+
+
+header.black{
+
+    color: white;
+
+    background: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.4),rgba(0,0,0,0.3),rgba(0,0,0,0.2),rgba(0,0,0,0.1),rgba(0,0,0,0.0));
+
+}
+
+header ul{
+    
+    padding: 0;
+    
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+    
+}
+
+header ul li{
+
+    display: inline-block;
+
+    margin: 0 15px;
+
+    cursor: pointer;
+
+}
+
+section.welcome{
+    text-align: center;
+     
+
+    color: black;
+    text-transform: uppercase;
+    
+
+
+
+  /*  display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;*/
+
+}
+section.welcome
+{
+     background-image: url(../../img/fona.jpg);
+
+    background-repeat: no-repeat;
+
+    background-size:100%;
+}
+ 
+ section.welcome div.a
+ {
+    padding-top: 25vw;
+     font: message-box;
+     font-size: 10vw;
+     font-weight: bold;
+     color: white;
+ }
+ section.welcome div.b
+ {
+    padding-top: 2vh;
+    color: white;
+     font: message-box;
+     font-size: 10vw;
+     font-weight: bold;
+     
+ }
+section.welcome div.background{
+
+    width: 100vw;
+
+    height: 100vh;
+
+    /*background-image: url(../../img/samarkand_modi.jpg);
+
+    background-repeat: no-repeat;
+
+    background-size:100%;
+
+    background-position: left bottom;*/
+
+    
+
+}
+
+section.welcome div.description{
+
+    position: absolute;
+
+    z-index: 14;
+
+    top: 50%;
+
+    text-align: center;
+
+    font: message-box;
+
+    text-transform: uppercase;
+
+
+}
+
+
+
+
+section.culture{
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-image: url(../../img/culture4.png);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+section.culture .item{
+
+    width: 50%;
+
+    height: 50%;
+
+}
+
+section.map{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+section.map .info{
+
+    width: 250px;
+
+    height: 350px;
+
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+
+    position: absolute;
+
+    top: 0;
+    
+    left: 0;
+    
+    z-index: 5;
+    
+    opacity: 1.0;
+
+    background: #fff;
+
+    transition: all .05s;
+
+    display: grid;
+
+    grid-template-rows: 150px 200px;
+    
+    overflow: hidden;
+
+}
+
+section.map .info .infoTitle{
+
+    width: 100%;
+
+    height: 100%;
+    
+    background-repeat: no-repeat;
+    
+    background-position: center;
+    
+    background-size: cover;
+
+}
+
+section.map .info .infoDescription{
+
+    width: calc(100% - 32px);
+    
+    height: calc(100% - 32px);
+    
+    padding: 16px;
+
+    padding-top: 0;
+    
+    font: message-box;
+    
+    font-size: 16px;
+    
+    text-transform: capitalize;
+    
+    line-height: 1.2;
+    
+    word-spacing: 1px;
+    
+    letter-spacing: .05px;
+    
+    text-align-last: left;
+    
+    text-align: left;
+
+    text-overflow: clip;
+
+    overflow: hidden;
+    
+}
+
+
+section.posts{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font: message-box;
+
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4) inset;
+
+}
+
+section.posts .item{
+
+    width: 300px;
+
+    height: 450px;
+
+    display: grid;
+
+    grid-template-rows: 200px 250px;
+
+    margin: 10px;
+
+    background: #fff;
+
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+
+    font-weight: bold;
+
+    line-height: 1.5;
+
+    overflow: hidden;
+
+    border-radius: 3px;
+
+    transition: all 0.5s;
+
+}
+
+
+section.posts .item .image{
+
+    width: 100%;
+
+    height: 100%;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+}
+
+section.posts .item .description{
+
+    padding: 20px;
+
+    transition: all 0.5s;
+
+    color: #000;
+
+}
+
+footer{
+
+    display: grid;
+
+    grid-template-columns: 20% 60% 20%;
+
+    background: #000;
+
+    color: #fff;
+
+    font: message-box;
+
+    font-size: 16px;
+
+    text-align: left;
+
+}
+
+footer div{
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+section.history {
+    
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    font: message-box;
+
+    font-size: 20px;
+
+    line-height: 1.2;
+
+    text-align: center;
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    background-image: url(../../img/history.png);
+
+    overflow: hidden;
+
+}
+
+section.history div.description {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    background: linear-gradient(to right,rgba(255, 255, 255, 1.0),rgba(255, 255, 255, 1.0),rgba(255, 255, 255, 1.0),rgba(255, 255, 255, 1.0),rgba(255, 255, 255, 0.0));
+
+}
+
+section.history div.item {
+
+    width: 90%;
+
+    height: 90%;
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+svg {
+
+    z-index: 2;
+
+    position: relative;
+    
+}
+
+.tab {
+    
+    position: fixed;
+    
+    left: 0;
+    
+    top: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100%;
+
+    width: 100%;
+
+    transition: all 0.4s;
+
+    opacity: 0.0;
+
+    overflow-y: scroll;
+
+    display: none;
+
+    z-index: 20;
+    
+}
+
+div.tab div.background {
+
+    background-image: url(../../img/culture.jpg);
+    
+    background-position: center;
+    
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    
+    width: 100%;
+    
+    height: 100%;
+    
+    position: fixed;
+    
+    background-attachment: fixed;
+    
+    
+}
+
+div.tab div.content {
+    
+    width: 80%;
+    
+    height: 1000px;
+    
+    background: #fff;
+    
+    z-index: 15;
+    
+    margin-top: 100%;
+    
+}

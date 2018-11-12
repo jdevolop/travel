@@ -1,0 +1,327 @@
+/*main*/
+
+html,body {
+    
+    margin: 0;
+    
+    padding: 0;
+    
+    width: 100%;
+    
+    height: 100%;
+    
+    font: message-box;
+    
+}
+
+/*1 block*/
+
+header.menu {
+    
+    width: 100%;
+    
+    height: 60px;
+    
+    background-color: rgb(29, 29, 29);
+    
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+header.menu nav{
+    
+    display: grid;
+    
+    grid-template-columns: 20% 60% 20%;
+    
+    width: 100%;
+    
+    height: 100%;
+    
+}
+
+header.menu nav div{
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+}
+
+header.menu nav div label{
+    
+    text-transform: capitalize;
+    
+    letter-spacing: 0.4px;
+    
+    font-size: 25px;
+    
+    font-weight: bold;
+    
+    color: #fff;
+    
+}
+
+header.menu nav div button{
+    
+    padding: 6px 18px;
+    
+    border-radius: 3px;
+    
+    background-color: #0088ff;
+    
+    color: #fff;
+    
+    font-size: 18px;
+    
+    text-transform: uppercase;
+    
+    border: 4px solid #0068c3;
+    
+    cursor: pointer;
+    
+    outline: none;
+    
+    transition: all 300ms;
+    
+}
+
+header.menu nav div button:active{
+    
+    transform: scale(0.98);
+}
+
+/*2 block*/
+
+section.interface {
+    
+    width: 100%;
+    
+    height: min-content;
+    
+    display: grid;
+    
+    grid-template-rows: 60px min-content;
+    
+}
+
+section.interface header{
+    
+    background-color: #ccc;
+    
+    color: #000;
+    
+    font-size: 20px;
+    
+    display: flex;
+    
+    align-items: center;
+    
+    justify-content: flex-start;
+    
+    padding: 20px;
+    
+    z-index: -1;
+    
+}
+
+section.interface section{
+    
+    display: flex;
+    
+    flex-flow: row wrap;
+    
+    width: 100%;
+    
+    height: 100%;
+    
+    background: #fff;
+    
+    justify-content: flex-start;
+    
+    align-items: flex-start;
+    
+}
+
+/*3 block*/
+
+footer {
+    
+    text-align: center;
+    
+    display: flex;
+    
+    justify-content: center;
+    
+    align-items: center;
+    
+    width: 100%;
+    
+    height: 60px;
+    
+    background-color: #fff;
+    
+}
+figure.item {
+    
+    width: 250px;
+    
+    height: 300px;
+    
+    border-radius: 3px;
+    
+    overflow: hidden;
+    
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
+    
+    transition: all 300ms;
+    
+}
+
+figure.add {}
+
+figure.add div.text h3 label.title input {
+    
+    border: 0;
+    
+    width: 200px;
+    
+    font: message-box;
+    
+    font-size: 1.17em;
+    
+    font-weight: bold;
+    
+    outline: none;
+    
+}
+
+figure.add div.text p textarea {
+    
+    line-height: 1.15;
+    
+    display: block;
+    
+    margin-block-start: 1em;
+    
+    margin-block-end: 1em;
+    
+    margin-inline-start: 0px;
+    
+    margin-inline-end: 0px;
+    
+    font: message-box;
+    
+    width: 100%;
+    
+    height: 80px;
+    
+    outline: none;
+    
+    border: 0;
+    
+    resize: none;
+
+}
+
+figure.item:hover {
+    
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+figure.item:hover div.text h3 label.tools {
+    
+    opacity: 1.0;
+    
+}
+
+figure.item div.background {
+    
+    width: 100%;
+    
+    height: 150px;
+    
+    background-repeat: no-repeat;
+    
+    background-position: center;
+    
+    background-size: cover;
+    
+}
+
+figure.item div.text {
+    
+    padding: 0 10px 10px 10px;
+    
+}
+
+figure.item div.text h3 label.title{
+    
+    float: left;
+    
+}
+
+figure.add div.text h3 label.title{
+
+    margin-top: -4px;
+    
+}
+
+figure.item div.text h3 label.tools{
+    
+    transition: all 300ms;
+    
+    float: right;
+    
+    opacity: 0.0;
+    
+}
+
+figure.item div.text h3 label.tools div{
+    
+    width: 20px;
+    
+    height: 20px;
+    
+    background-position: center;
+    
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    
+    display: inline-block;
+    
+}
+
+figure.item div.text h3 label.tools div.b{
+    
+    cursor: pointer;
+    
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKZSURBVHhe7d09axRhGIXh9aMRG0ECIgpiHQUhERUbRfAHmEpIoVYWYmsRMaRQQcFGK1ELQUsrCzH4gZ2t2FgIFoKSlCqEBM15im3GZ4OzTjLnnb0vuLuQ3XeO2V1FMj0AAACMkANqRj1WL9TLmj1XD9VFtVthSIfVa/WnwVbUA7VLoYb407yssovaRN/VMYV/EGNkF7HpfqpDCmuYUOv5k1Hti9quMMBblV249eyaQuKgyi5Yv3l1W92s2V31UWXfM/qmNitUxEfb7IJF59T/2Kri01X2vaOjChXx94zsYr1STYj3ih8qe4zzChXxkpRdrFuqKe9V9hhXFSreqexi3VBN2YjH6AwGacA+daqhPqjsYj1V2dcP00Y8xg7VmisqO+Aod1y1hkH+jkHMYhCzGMQsBjGr1UEGiSeVPdmoJF05B4O4YRAzDGKGQcwwiJlhDnJHZf/R7YLKjKvs66NB6j7GSA9S95/GXR/DEoOYYRAzDGKGQcwwiBkGMcMgZhjEDIOYYRAzDGKGQcwwiBkGMcMgZhjEDIOYYRAzDGKGQcwwiBkGMcMgZhjEDIOYYRAzDGKGQcwwiBkGMcMgZhjEDIOYYRAzDGKGQcwwiBkGMcMgZhjEDIOYYRAzXTkIg5hhEDOdGWRSZYeIdqpSnFHZGX6pouxR2UGiaVWKRyo7wydVlLin01eVHWZRnVTONqnL6rfKzvBEFeeeyg7T77OKu+pkv+Gtzd6oBZU9537xUlac/WpJZQcqubjjW9xkrEizKjtUqcW9dE+oYsVr8TOVHa604v3kkireFhW/DXTQG2QJxX1zz6pOOaLiTTN+7LNDOxb3Pbyv9qrOGlNTKj5WXlfZ7VLbbE7FHatPq20KAAAAAAAAwJp6vVXxl8dRZFxlFgAAAABJRU5ErkJggg==");
+}
+
+figure.item div.text h3 label.tools div.a{
+    
+    cursor: pointer;
+    
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH6SURBVHhe7dgxTitBEEVRZxCwH1YCu0EQwMZAP4GAjJwdQEoC1RIl9R+VPV3dPbxg7pFeYuPklmwDBwAAAADAf65tr7Yv27vtwXZuwx+4sX0He7Rd2LChW1sU3/dk4wgbWYvv4wgbaI3v4wgTZeP7OMIEvfF9HGHAaHwfR+gwK76PIyRk4pc/wqLHo3GEBpn4HvSuemxtHOGEnvgue4QzGyoj8V3mCPc2/JoR37Ue4c0Gk4n/bFv7/C7Pt3wxf9p2LxO/7MN2aTumxC/vkOi1y/2z7Vo2vu/YETLxy65su9Ub37c8QjZ++Z7YrdH4Pj8C8RNmxfeVI7wsHjs14jeuRC1xo+d6R/zG+e/55eNl1hGI3ziP72YcgfiNW8Z3I0cgfuOOxXc9RyB+49biF+X58m+I6PXRiN+41vjl56LXRyN+44g/GfGFiC9EfCHiCxFfiPhCxBcivhDxhYgvRHwh4gsRX4j4QsQXIr4Q8YWIL0R8IeILEV+I+ELEFyK+EPGFiC9EfCHiCxFfiPhCxBcivlgUJRrxNxKFWY74G4ri1CP+xqJA9Yi/sShSvVOIP0EUqt4xxJ8kilUvQvyJomD1log/WRRt1ojfIAo3Y8RvFMUbHfETooAjI35SFLF3xO8QhewZ8TtFMbMj/oAoaGbEBwAAAAAAwA4dDj9BqFrO23+qPQAAAABJRU5ErkJggg==");
+    
+}
+
+figure.add div.text h3 label.tools div.c{
+    
+    cursor: pointer;
+    
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKbSURBVHhe7d1LilRREITh2ou6DUFR96juRdE9+NiED8S5ZtJID/yTU3WI6uBS8cM3S+JWlwN10veUUkoppZTO6FV5U76W3+XPjemfuX/2/g5elgfrSflQ6EPdsvelv5ur9rR8L/QB4u676e/oKj0uPws9OO71H0J/V/I+Fnpg/O9dkfai0INi9rzIelvoITHrfx3J6n9u0UNi9rnI+lXoITHr70wWPSDWZNF4rMmi8ViTReOxJovGY00WjceaLBqPNVk0HmuyaDzWZNG40xTdOsmicacpunWSReNOU3TrJIvGnabo1kkWjTtN0a2TLBp3mqJbJ1k07jRFt06yaNxpim6dZNG40xTdOsmicacpunWSReNOU3TrJIvGnabo1kkWjTtN0a2TLBp3mqJbJ1k07jRFt06yaNxpim6dZNG40xTdOsmicacpunWSReM7jhJ99h2yaHzHUaLPvkMWje84SvTZd8ii8R1HiT77Dlk0vuMo0WffIYvGdxwl+uw7ZNG40xTdOsmicacpunWSReNOU3TrJIvGnabo1kkWjTtN0a2TLBp3mqJbJ1k07jRFt06yaNxpim6dZNG40xTdOsmicacpunWSReNOU3TrJIvGnabo1kkWjTtN0a2TLBp3mqJbJ1k07jRFt06yaNxpim6dZNG40xTdOsmicacpunWSReOxJovGY00WjceaLBqPNVk0HmuyaDzWZNF4rMmi8ViTReOxJiu/vPty0l/e/aXQQ2Im/fX1eYHD5V4XWXmFyeWkrzDp8u6w88lf4tP1q5l+FHpg3PtWrvIaq65fUtYPoAfH3XdztRe5/av/dPu1ffQBbll/J4/Kg9V/yfTf9J/KLf4/oX/m/tn7O3hWUkoppZRSSimllFI6s9PpL5xOlHDMNWV3AAAAAElFTkSuQmCC");
+    
+}
+
+
+figure.item div.text p {
+    
+    line-height: 1.15;
+    
+}
